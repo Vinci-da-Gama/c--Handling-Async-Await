@@ -22,6 +22,7 @@ namespace Exception_Async_Await_Pj
     /// </summary>
     public partial class MainWindow : Window
     {
+        private string theUrl = "https://msdn.microsoft.com/en-us/";
         public MainWindow()
         {
             InitializeComponent();
@@ -54,13 +55,19 @@ namespace Exception_Async_Await_Pj
         private void Sync_Download(object sender, RoutedEventArgs e)
         {
             Sync_Class sc = new Sync_Class();
-            sc.SyncDownload("https://msdn.microsoft.com/en-us/");
+            sc.SyncDownload(this.theUrl);
+
+            string htmlStr = sc.SyncDownloadString(this.theUrl);
+            MessageBox.Show(htmlStr.Substring(0, 10));
         }
 
-        private void Async_Download(object sender, RoutedEventArgs e)
+        private async void Async_Download(object sender, RoutedEventArgs e)
         {
-            Exceptions exs = new Exceptions();
-            exs.ExceptionDivideZero();
+            Async_Class ac = new Async_Class();
+            await ac.DownloadHtmlAsync("https://msdn.microsoft.com/en-us/");
+
+            var htmlstr = await ac.DownloadStringAsync(theUrl);
+            MessageBox.Show(htmlstr.Substring(0, 10));
         }
     }
 }

@@ -20,5 +20,11 @@ namespace Exception_Async_Await_Pj.Sync_Async
                 streamwritter.Write(downloadHtml);
             }
         }
+
+        public string SyncDownloadString(string url)
+        {
+            var webCli = new WebClient();
+            return webCli.DownloadString(url);
+        }
     }
 }
