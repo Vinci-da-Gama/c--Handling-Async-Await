@@ -3,10 +3,10 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
-./Handling-Async-Await_Solu/Handling-Async-Await_Pj/bin/
-./Handling-Async-Await_Solu/Handling-Async-Await_Pj/obj/
-./Handling-Async-Await_Solu/.vs/
-./Handling-Async-Await_Solu/.vscode/
+./Exception_Async_Await_Solu/Exception_Async_Await_Pj/bin/
+./Exception_Async_Await_Solu/Exception_Async_Await_Pj/obj/
+./Exception_Async_Await_Solu/.vs/
+./Exception_Async_Await_Solu/.vscode/
 
 # User-specific files
 *.suo
