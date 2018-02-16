@@ -7,7 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="219,137,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Exception_Divide" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="114" Height="38"/>
+        <Button Content="Ex_Final" HorizontalAlignment="Left" Margin="148,53,0,0" VerticalAlignment="Top" Width="88" Height="38" Click="Button_Click" />
+        <Button Content="Ex_using" HorizontalAlignment="Left" Margin="281,53,0,0" VerticalAlignment="Top" Width="83" Height="38" Click="Button_Click" />
+        <Button Content="Exception_Youtube" HorizontalAlignment="Left" Margin="397,55,0,0" VerticalAlignment="Top" Width="111" Height="36"/>
+        <Button Content="Sync_download" HorizontalAlignment="Left" Margin="72,204,0,0" VerticalAlignment="Top" Width="151" Height="37"/>
+        <Button Content="Async_Download" HorizontalAlignment="Left" Margin="317,204,0,0" VerticalAlignment="Top" Width="145" Height="37"/>
 
     </Grid>
 </Window>

@@ -24,5 +24,10 @@ namespace Exception_Async_Await_Pj
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
