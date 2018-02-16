@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Exception_Async_Await_Pj.ExceptionClasses;
+using Exception_Async_Await_Pj.Sync_Async;
 
 namespace Exception_Async_Await_Pj
 {
@@ -25,9 +27,40 @@ namespace Exception_Async_Await_Pj
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Divide0Exception(object sender, RoutedEventArgs e)
         {
+            Exceptions exs = new Exceptions();
+            MessageBox.Show(exs.ExceptionDivideZero());
+        }
 
+        private void ExceptionWithFinal(object sender, RoutedEventArgs e)
+        {
+            Exceptions exs = new Exceptions();
+            MessageBox.Show(exs.ExceptionWithFinal());
+        }
+
+        private void Exception_Using(object sender, RoutedEventArgs e)
+        {
+            Exceptions exs = new Exceptions();
+            MessageBox.Show(exs.ExceptionUsingBlock());
+        }
+
+        private void Exception_Youtube(object sender, RoutedEventArgs e)
+        {
+            Exceptions exs = new Exceptions();
+            MessageBox.Show(exs.ExceptionYoutube());
+        }
+
+        private void Sync_Download(object sender, RoutedEventArgs e)
+        {
+            Sync_Class sc = new Sync_Class();
+            sc.SyncDownload("https://msdn.microsoft.com/en-us/");
+        }
+
+        private void Async_Download(object sender, RoutedEventArgs e)
+        {
+            Exceptions exs = new Exceptions();
+            exs.ExceptionDivideZero();
         }
     }
 }
